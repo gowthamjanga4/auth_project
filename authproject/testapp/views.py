@@ -4,7 +4,7 @@ from .forms import SignupForm
 from django.http import HttpResponseRedirect
 
 
-# Create your views here Gowtham sirgit
+# Create your views here Gowtham sir
 
 def home_view(request):
     return render(request, 'testapp/home.html')
