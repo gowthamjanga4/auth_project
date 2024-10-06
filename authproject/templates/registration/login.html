@@ -1,0 +1,15 @@
+{% extends 'testapp/base.html' %}
+{% block title_block %}
+    <title>Login Page</title>
+{% endblock %}
+
+{% block body_block %}
+    <div class="container">
+        <h1>Login Page</h1>
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary btn-lg">
+        </form>
+    </div>
+{% endblock %}
